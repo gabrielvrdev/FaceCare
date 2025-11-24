@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import * as faceapi from "face-api.js";
 import { useNavigate } from "react-router-dom";
+import BackButton from "./BackButton";
 
 function CardsInicio({ isDark, setIsDark }) {
   const navigate = useNavigate();
@@ -151,19 +152,8 @@ function CardsInicio({ isDark, setIsDark }) {
       <div className="relative mx-auto flex max-w-5xl flex-col gap-8">
         {/* Toggle de tema */}
         <div className="flex justify-between mb-4">
-          {/* Botão de voltar */}
-          <button
-            onClick={() => (window.location.href = "/")} // ajuste a rota conforme necessário
-            className={`flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium backdrop-blur-sm transition 
-      ${
-        isDark
-          ? "border-slate-600 bg-slate-900/70 text-slate-100 hover:bg-slate-800"
-          : "border-[#e5e7eb] bg-white/80 text-[#2b2a2a] hover:bg-white"
-      }`}
-          >
-            <span className="text-lg">←</span>
-            <span>Voltar</span>
-          </button>
+          {/* Botão de voltar usando o componente */}
+          <BackButton isDark={isDark} context="inicio" />
 
           {/* Toggle de tema */}
           <button

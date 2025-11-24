@@ -1,5 +1,6 @@
 // src/components/CardsDermat.jsx
 import React from "react";
+import BackButton from "./BackButton";
 
 export default function CardsDermat({ isDark, setIsDark }) {
   const containerBg = isDark ? "bg-[#020617]" : "bg-[#f9fafb]";
@@ -32,19 +33,7 @@ export default function CardsDermat({ isDark, setIsDark }) {
         {/* Ações (voltar + tema) */}
         <div className="flex justify-between mb-6 gap-5">
           {/* BOTÃO DE VOLTAR */}
-          <button
-            type="button"
-            onClick={() => (window.location.href = "/inicio")}
-            className={`flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium transition
-      ${
-        isDark
-          ? "border-slate-600 bg-slate-800 text-slate-100 hover:bg-slate-700"
-          : "border-slate-200 bg-white text-slate-600 hover:bg-slate-100"
-      }`}
-          >
-            <span className="text-lg">←</span>
-            Voltar
-          </button>
+          <BackButton isDark={isDark} context="subpage" />
 
           {/* BOTÃO DE TEMA */}
           <button
