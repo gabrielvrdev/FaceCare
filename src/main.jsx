@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LoginPage from "./assets/pages/loginPage";
+import LoginPage from "./assets/pages/LoginPage";
 import InicioPage from "./assets/pages/InicioPage";
 import DermatPage from "./assets/pages/DermatPage";
 import MercadPage from "./assets/pages/MercadPage";
