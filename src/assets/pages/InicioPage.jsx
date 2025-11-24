@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import CardsInicio from "../../components/CardsInicio";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function InicioPage() {
   // Estado central do tema
