@@ -440,6 +440,7 @@ function CardsInicio({ isDark, setIsDark }) {
 ------------------------------------------------- */
 
 function FacialScanModal({ onClose, onOpenChat, isDark }) {
+  const navigate = useNavigate();
   const [step, setStep] = useState("intro");
   const [scanData, setScanData] = useState(null);
   const [loadingModels, setLoadingModels] = useState(true);
@@ -738,10 +739,18 @@ function FacialScanModal({ onClose, onOpenChat, isDark }) {
                 >
                   Conversar com especialista
                 </button>
-                <button className="rounded-lg border border-[#fec5c2] px-3 py-2 text-xs font-medium hover:bg-[#fff5f4]">
+                <button
+                  onClick={() => navigate("/dermatologistas")}
+                  className="rounded-lg border border-[#fec5c2] px-3 py-2 text-xs font-medium 
+           text-[#b42318] hover:bg-[#fff5f4] hover:text-[#b42318]"
+                >
                   Ver dermatologistas locais
                 </button>
-                <button className="rounded-lg border border-[#8dd3f0] px-3 py-2 text-xs font-medium hover:bg-[#f0f9ff]">
+                <button
+                  onClick={() => navigate("/mercadorias")}
+                  className="rounded-lg border border-[#8dd3f0] px-3 py-2 text-xs font-medium 
+           text-[#075985] hover:bg-[#f0f9ff] hover:text-[#075985]"
+                >
                   Ver mercado / farmácias
                 </button>
               </div>
