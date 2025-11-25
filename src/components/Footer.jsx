@@ -91,7 +91,7 @@ export default function Footer() {
             <a href="#">
               <img
                 src="/googleplay.png"
-                className="w-32 md:w-42 hover:opacity-90 transition"
+                className="w-40 md:w-44 hover:opacity-90 transition"
                 alt="Google Play"
               />
             </a>

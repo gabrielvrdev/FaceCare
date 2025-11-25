@@ -80,14 +80,40 @@ export default function CardsMercad({ isDark, setIsDark }) {
           </div>
 
           <div className="flex flex-wrap gap-2 text-[11px] mt-2 lg:mt-0">
-            <button className="px-3 py-1.5 rounded-full border border-slate-500/30 text-xs text-slate-300 bg-slate-800/40 hover:bg-slate-700/60 transition">
-              🚚 Entrega hoje
+            {/* Avaliação */}
+            <button
+              className={`px-3 py-1.5 rounded-full flex items-center gap-1 transition
+      ${
+        isDark
+          ? "bg-slate-700/70 text-slate-200 hover:bg-slate-600/70"
+          : "bg-slate-200 text-slate-700 hover:bg-slate-300"
+      }`}
+            >
+              🚚 <span> Entrega hoje</span>
             </button>
-            <button className="px-3 py-1.5 rounded-full border border-slate-500/30 text-xs text-slate-300 bg-slate-800/40 hover:bg-slate-700/60 transition">
-              🧴 Dermocosméticos
+
+            {/* Convênio */}
+            <button
+              className={`px-3 py-1.5 rounded-full flex items-center gap-1 transition
+      ${
+        isDark
+          ? "bg-slate-700/70 text-slate-200 hover:bg-slate-600/70"
+          : "bg-slate-200 text-slate-700 hover:bg-slate-300"
+      }`}
+            >
+              🧴 <span>Dermocosméticos</span>
             </button>
-            <button className="px-3 py-1.5 rounded-full border border-slate-500/30 text-xs text-slate-300 bg-slate-800/40 hover:bg-slate-700/60 transition">
-              💰 Menor preço
+
+            {/* Distância */}
+            <button
+              className={`px-3 py-1.5 rounded-full flex items-center gap-1 transition
+      ${
+        isDark
+          ? "bg-slate-700/70 text-slate-200 hover:bg-slate-600/70"
+          : "bg-slate-200 text-slate-700 hover:bg-slate-300"
+      }`}
+            >
+              💰 <span>Menor preço</span>
             </button>
           </div>
         </div>
@@ -138,10 +164,21 @@ export default function CardsMercad({ isDark, setIsDark }) {
           </div>
 
           <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Indicado para rotina da noite
             </span>
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Compatível com recomendação FaceCare
             </span>
           </div>
@@ -206,10 +243,21 @@ export default function CardsMercad({ isDark, setIsDark }) {
           </div>
 
           <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Uso diurno (com protetor)
             </span>
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Linha recomendada para manchas
             </span>
           </div>
@@ -270,11 +318,22 @@ export default function CardsMercad({ isDark, setIsDark }) {
           </div>
 
           <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Indicado para uso diário
             </span>
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
-              Sem fragrância
+
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
+              Sem fragrância e não comedogênico
             </span>
           </div>
 
@@ -336,10 +395,21 @@ export default function CardsMercad({ isDark, setIsDark }) {
           </div>
 
           <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Indicado para quem está começando
             </span>
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Aprovado por dermatologistas parceiros
             </span>
           </div>
@@ -400,10 +470,21 @@ export default function CardsMercad({ isDark, setIsDark }) {
           </div>
 
           <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Seguro para área dos olhos
             </span>
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Indicado para primeira etapa da rotina
             </span>
           </div>
@@ -468,10 +549,21 @@ export default function CardsMercad({ isDark, setIsDark }) {
           </div>
 
           <div className="mt-3 flex flex-wrap gap-2 text-[11px]">
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Passo essencial da rotina
             </span>
-            <span className="rounded-full bg-slate-500/10 px-2 py-1 text-slate-300">
+
+            <span
+              className={`rounded-full px-2 py-1
+      ${
+        isDark ? "bg-slate-800 text-slate-300" : "bg-slate-200 text-slate-700"
+      }`}
+            >
               Ideal para uso diário
             </span>
           </div>

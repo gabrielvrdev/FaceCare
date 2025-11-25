@@ -84,14 +84,40 @@ export default function CardsDermat({ isDark, setIsDark }) {
           </div>
 
           <div className="flex flex-wrap gap-2 text-[11px] mt-2 lg:mt-0">
-            <button className="px-3 py-1.5 rounded-full border border-slate-500/30 text-xs text-slate-300 bg-slate-800/40 hover:bg-slate-700/60 transition">
-              ⭐ Avaliação &gt; 4.5
+            {/* Avaliação */}
+            <button
+              className={`px-3 py-1.5 rounded-full flex items-center gap-1 transition
+      ${
+        isDark
+          ? "bg-slate-700/70 text-slate-200 hover:bg-slate-600/70"
+          : "bg-slate-200 text-slate-700 hover:bg-slate-300"
+      }`}
+            >
+              ⭐ <span>Avaliação &gt; 4.5</span>
             </button>
-            <button className="px-3 py-1.5 rounded-full border border-slate-500/30 text-xs text-slate-300 bg-slate-800/40 hover:bg-slate-700/60 transition">
-              🏥 Atende convênio
+
+            {/* Convênio */}
+            <button
+              className={`px-3 py-1.5 rounded-full flex items-center gap-1 transition
+      ${
+        isDark
+          ? "bg-slate-700/70 text-slate-200 hover:bg-slate-600/70"
+          : "bg-slate-200 text-slate-700 hover:bg-slate-300"
+      }`}
+            >
+              🏥 <span>Atende convênio</span>
             </button>
-            <button className="px-3 py-1.5 rounded-full border border-slate-500/30 text-xs text-slate-300 bg-slate-800/40 hover:bg-slate-700/60 transition">
-              📍 Até 5 km
+
+            {/* Distância */}
+            <button
+              className={`px-3 py-1.5 rounded-full flex items-center gap-1 transition
+      ${
+        isDark
+          ? "bg-slate-700/70 text-slate-200 hover:bg-slate-600/70"
+          : "bg-slate-200 text-slate-700 hover:bg-slate-300"
+      }`}
+            >
+              📍 <span>Até 5 km</span>
             </button>
           </div>
         </div>
@@ -105,7 +131,7 @@ export default function CardsDermat({ isDark, setIsDark }) {
         >
           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div>
-              <h3 className="text-sm font-semibold">Dra. Maria R.</h3>
+              <h3 className="text-sm font-semibold">Dra. Maria</h3>
               <p className={`text-[11px] ${textSoft}`}>
                 Dermatologia Clínica e Estética
               </p>
@@ -150,7 +176,7 @@ export default function CardsDermat({ isDark, setIsDark }) {
         >
           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div>
-              <h3 className="text-sm font-semibold">Dr. Arthur Vital</h3>
+              <h3 className="text-sm font-semibold">Dr. Arthur</h3>
               <p className={`text-[11px] ${textSoft}`}>Dermatologia Geral</p>
               <p className={`mt-1 text-[11px] ${textSoft}`}>
                 Foco em <strong>psoríase, dermatite, queda de cabelo</strong>
@@ -193,7 +219,7 @@ export default function CardsDermat({ isDark, setIsDark }) {
         >
           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div>
-              <h3 className="text-sm font-semibold">Dr. Rael Rodrigues</h3>
+              <h3 className="text-sm font-semibold">Dr. Rael</h3>
               <p className={`text-[11px] ${textSoft}`}>Dermatopediatria</p>
               <p className={`mt-1 text-[11px] ${textSoft}`}>
                 Foco em <strong>dermatite, alergias, limpeza de pele</strong>
@@ -277,7 +303,7 @@ export default function CardsDermat({ isDark, setIsDark }) {
         >
           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div>
-              <h3 className="text-sm font-semibold">Dra. Luísa Vital</h3>
+              <h3 className="text-sm font-semibold">Dra. Luísa</h3>
               <p className={`text-[11px] ${textSoft}`}>Dermatopediatria</p>
               <p className={`mt-1 text-[11px] ${textSoft}`}>
                 Foco em <strong>pele rugosa, alergias, acne</strong>
@@ -318,7 +344,7 @@ export default function CardsDermat({ isDark, setIsDark }) {
         >
           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div>
-              <h3 className="text-sm font-semibold">Dra. Sophia Rebouças</h3>
+              <h3 className="text-sm font-semibold">Dra. Sophi</h3>
               <p className={`text-[11px] ${textSoft}`}>Dermatopediatria</p>
               <p className={`mt-1 text-[11px] ${textSoft}`}>
                 Foco em{" "}
